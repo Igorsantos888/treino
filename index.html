@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ccff00'><path d='m6.5 6.5 11 11M3 8l3-3 2 2-3 3zm13 13 3-3 2 2-3 3zM18 3l3 3-2 2-3-3zM3 18l3 3-2 2-3-3zM8 3 3 8l1.5 1.5L8 6zm8 18 5-5-1.5-1.5L16 18z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PULSE FIT — Treinos & Musculação</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                neon: '#ccff00',       // Nike Volt / Electric Lime
+                neonHover: '#b8e600',
+                cyan: '#00f0ff',
+                orange: '#ff5e00',
+                purple: '#8b5cf6',
+                card: '#121318',
+                cardHover: '#181a22',
+                cardBorder: '#232634',
+                bg: '#0a0a0f',
+                surface: '#151720'
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              display: ['"Outfit"', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0a0a0f;
+        color: #f3f4f6;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      /* Custom scrollbars */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f1016;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #272a38;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3b3f52;
+      }
+    </style>
+  </head>
+  <body class="bg-[#0a0a0f] text-gray-100 min-h-screen selection:bg-[#ccff00] selection:text-black antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
